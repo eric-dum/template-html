@@ -1,0 +1,53 @@
+// Typography
+// -------------------------
+
+// @body-txt: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+// @input-txt: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+
+@webfont: 'Roboto', Helvetica, Arial, sans-serif;
+//Variables used for multi-weight fonts
+//@webfont-light: 'Roboto', Helvetica, Arial, sans-serif;
+//@webfont-light-oblique:'Roboto', Helvetica, Arial, sans-serif;
+//@webfont-regular:'Roboto', Helvetica, Arial, sans-serif;
+// @webfont-regular-oblique: ;
+//@webfont-bold: 'Roboto', Helvetica, Arial, sans-serif;
+//@webfont-bold-oblique: 'Roboto', Helvetica, Arial, sans-serif;
+
+// Webfont name space
+#webfont {
+  .light() {
+    font-family: @webfont;
+    font-weight: 300;
+  }
+  .light-oblique() {
+    font-family: @webfont;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .regular() {
+    font-family: @webfont;
+    font-weight: 400;
+  }
+  .regular-oblique() {
+    font-family: @webfont;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .bold() {
+    font-family: @webfont;
+    font-weight: 700;
+  }
+  .bold-oblique() {
+    font-family: @webfont;
+    font-weight: 700;
+    font-style: italic;
+  }
+}
+
+// webfont utility classes
+.font-light { #webfont > .light(); }
+.font-light-oblique { #webfont > .light-oblique(); }
+.font-regular { #webfont > .regular(); }
+.font-regular-oblique { #webfont > .regular-oblique(); }
+.font-bold { #webfont > .bold(); }
+.font-bold-oblique { #webfont > .bold-oblique(); }
